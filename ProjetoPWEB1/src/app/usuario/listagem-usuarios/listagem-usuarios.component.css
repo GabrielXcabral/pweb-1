@@ -1,0 +1,18 @@
+.card-usuario {
+  background-color: aliceblue;
+  width: 100%;
+  margin: 10px;
+}
+.listagem-usuarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Listagem {
+  background-image: url('../../../assets/hifpb.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* opacity: 0.5; */
+  text-align: center;
+  background-position: center;
+}

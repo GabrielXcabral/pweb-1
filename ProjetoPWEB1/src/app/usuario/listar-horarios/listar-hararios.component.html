@@ -1,0 +1,31 @@
+<h1>Horarios</h1>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+  <!-- Horário Column -->
+  <ng-container matColumnDef="Horario">
+    <th mat-header-cell *matHeaderCellDef>Horário</th>
+    <td mat-cell *matCellDef="let element">{{ element.horario }}</td>
+  </ng-container>
+
+  <!-- Data -->
+  <ng-container matColumnDef="Data">
+    <th mat-header-cell *matHeaderCellDef>Data</th>
+    <td mat-cell *matCellDef="let element">{{ element.data }}</td>
+  </ng-container>
+
+  <!-- Aluno Column -->
+  <ng-container matColumnDef="Aluno">
+    <th mat-header-cell *matHeaderCellDef>Aluno</th>
+    <td mat-cell *matCellDef="let element">{{ element.aluno }}</td>
+  </ng-container>
+
+  <!-- Intérprete Column -->
+  <ng-container matColumnDef="Interprete">
+    <th mat-header-cell *matHeaderCellDef>Intérprete</th>
+    <td mat-cell *matCellDef="let element">{{ element.interprete }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

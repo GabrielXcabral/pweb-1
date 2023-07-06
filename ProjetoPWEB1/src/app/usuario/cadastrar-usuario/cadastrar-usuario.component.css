@@ -1,0 +1,27 @@
+@import url(../../styles/colors.css);
+
+.card-cadastro {
+  background-color: #5cb85c;
+  width: 40vw;
+  margin: 10px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.card-cadastro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-field {
+  width: 90%;
+}
+
+.button-cadastro {
+  background-color: #fff;
+  color: black;
+}

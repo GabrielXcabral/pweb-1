@@ -1,0 +1,69 @@
+{
+  "usuarios": [
+    {
+      "nomeCompleto": "Pedro",
+      "dataNascimento": "2023-05-11",
+      "cpf": "11125052457",
+      "email": "pedro@gmail.coe",
+      "id": 0,
+      "horarios": [
+        {
+          "data": "2023-12-31",
+          "horario": "10:00"
+        },
+        {
+          "data": "2023-12-29",
+          "horario": "15:00"
+        },
+        {
+          "data": "2023-12-30",
+          "horario": "10:00"
+        }
+      ]
+    },
+    {
+      "nomeCompleto": "gabriel",
+      "dataNascimento": "0001-02-21",
+      "cpf": "12121111221",
+      "email": "samuel@gmail.com",
+      "id": 1
+    },
+    {
+      "nomeCompleto": "samuel",
+      "dataNascimento": "0121-02-21",
+      "cpf": "12111112122",
+      "email": "e@gmail.com",
+      "id": 2
+    },
+    {
+      "nomeCompleto": "Fernando",
+      "dataNascimento": "2001-07-25",
+      "cpf": "12344022500",
+      "email": "teste@gmail.com",
+      "id": 3
+    },
+    {
+      "nomeCompleto": "Samuel dois",
+      "dataNascimento": "2001-04-25",
+      "cpf": "11125052458",
+      "email": "teste@gmail.com",
+      "id": 4
+    }
+  ],
+  "alunos": [
+    {
+      "id": 1,
+      "nomeCompleto": "mario",
+      "curso": "Curso 1",
+      "matricula": "123456",
+      "email": "aluno1@example.com"
+    },
+    {
+      "id": 2,
+      "nomeCompleto": "louise",
+      "curso": "Curso 2",
+      "matricula": "789012",
+      "email": "aluno2@example.com"
+    }
+  ]
+}

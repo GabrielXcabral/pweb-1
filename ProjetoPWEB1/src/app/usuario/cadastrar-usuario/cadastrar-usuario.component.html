@@ -1,0 +1,100 @@
+<form [formGroup]="formCadastro">
+  <mat-card class="card-cadastro">
+    <mat-card-content class="card-cadastro-content">
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Nome completo</mat-label>
+
+        <input
+          matInput
+          [(ngModel)]="usuarioDeManutencao.nomeCompleto"
+          placeholder="Digite o nome"
+          formControlName="nomeCompleto"
+        />
+      </mat-form-field>
+
+      <!-- <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Data nascimento</mat-label>
+        <input
+          type="date"
+          [(ngModel)]="usuarioDeManutencao.dataNascimento"
+          matInput
+          placeholder="Selecione uma data"
+          [max]="maxDate"
+          formControlName="dataNascimento"
+        />
+      </mat-form-field> -->
+
+      <!-- <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Data nascimento</mat-label>
+
+        <input
+          matInput
+          [matDatepicker]="picker"
+          [(ngModel)]="usuarioDeManutencao.dataNascimento"
+          placeholder="Selecione uma data"
+          [max]="maxDate"
+          formControlName="dataNascimento"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>CPF</mat-label>
+
+        <input
+          matInput
+          [(ngModel)]="usuarioDeManutencao.cpf"
+          placeholder="Digite o CPF"
+          formControlName="cpf"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Idade</mat-label>
+
+        <input
+          matInput
+          [(ngModel)]="usuarioDeManutencao.idade"
+          placeholder="Digite a idade"
+          formControlName="idade"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Email</mat-label>
+
+        <input
+          matInput
+          [(ngModel)]="usuarioDeManutencao.email"
+          placeholder="Digite o email"
+          formControlName="email"
+        />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-actions *ngIf="!IdUsuarioEditar">
+      <button
+        [disabled]="!formCadastro.valid"
+        mat-raised-button
+        color="white"
+        (click)="manter()"
+        class="button-cadastro"
+      >
+        {{ nomeBotaoManutencao }}
+      </button>
+    </mat-card-actions>
+
+    <mat-card-actions *ngIf="IdUsuarioEditar">
+      <button
+        [disabled]="!formCadastro.valid"
+        mat-raised-button
+        color="white"
+        (click)="atualizar()"
+        class="button-cadastro"
+      >
+        {{ nomeBotaoManutencao }}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>
